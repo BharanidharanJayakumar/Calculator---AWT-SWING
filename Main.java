@@ -88,6 +88,12 @@ class Calculator extends Frame implements ActionListener {
         add(btmul);
         add(btd);
 
+   addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
 
         setLayout(null);
